@@ -1,0 +1,29 @@
+/* -------------------------------------------------------
+*  6.0 Navigation
+*  ------------------------------------------------------*/
+
+/*
+*  6.1 Links
+*/
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $text-color;
+    border-bottom: 1px solid currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    outline-color: $link-hover-color;
+    border-bottom-color: currentColor;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/*
+*  6.2 Menus
+*/

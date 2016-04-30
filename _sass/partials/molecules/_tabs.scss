@@ -1,0 +1,78 @@
+/*===========================================
+* Tabs, Accordions and Toggles Molecules
+============================================*/
+
+/*----- TABS --------*/
+.tabs {
+
+  @include clearfix;
+  padding: 0;
+
+  .tab-header-and-content {
+    list-style: none;
+    display: inline;
+  }
+
+  .tab-link {
+    @include remove-underline;
+    display: block;
+    padding: 0.3em 0.5em;
+    margin-bottom: -1px;
+    &:focus, &:hover {
+      color: $text-color;
+    }
+  }
+
+  .is-active {
+    border: 1px solid $border-color;
+    border-bottom: 1px solid $body-bg;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .tab-content {
+    width: 100%;
+    float: left;
+    padding: 0.4em;
+    border: 1px solid $border-color;
+    border-radius: 0 4px 4px 4px;
+  }
+}
+
+/*------- ACCORDIONS AND TOGGLES-------*/
+.accordion, .toggles {
+  padding: 0;
+  list-style: none;
+  > li {
+    border-bottom: 1px solid $border-color;
+    & > a {
+      @include remove-underline;
+      display: block;
+      padding: 0.5em;
+      margin-left: 1.2em;
+      position: relative;
+      &:before {
+        content: "+";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -0.8em;
+        font-weight: 700;
+        font-size: 1.5em;
+      }
+      &:focus, &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+  .is-expanded {
+    > a {
+      &:before {
+        content: "-";
+      }
+    }
+    display: block;
+  }
+}
+
+

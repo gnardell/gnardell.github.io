@@ -1,0 +1,64 @@
+
+/* =============== Callouts =============== */
+.callout {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 1em 2em;
+  position: relative;
+  margin-bottom: 20px;
+  svg {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5rem;
+  }
+  h4, p {
+    margin-left: 50px;
+  }
+  h4 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  &.callout-info {
+    border-color: $info-color;
+    background-color: lighten($info-color, 60);
+       svg {
+         fill: $info-color;
+       }
+     }
+  &.callout-warning {
+    border-color: $warning-color;
+    background-color: lighten($warning-color, 63);
+    svg {
+      fill: $warning-color;
+    }
+  }
+  &.collout-success {
+    border-color: $success-color;
+    background-color: lighten($success-color, 68);
+    svg {
+      fill: $success-color;
+    }
+  }
+  &.callout-alert {
+    border-color: $alert-color;
+    background-color: lighten($alert-color, 50);
+    svg {
+      fill: $alert-color;
+    }
+  }
+}
+
+//Call to action
+.call-to-action {
+  @include span-columns(4);
+  padding: 1em 2em;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+text-align: center;
+
+}

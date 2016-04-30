@@ -1,0 +1,38 @@
+// Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg: #fefefe !default;
+//** Global text color on `<body>`.
+$text-color: #232221 !default;
+// Theme colors
+$base-theme-color: #097380 !default;
+// Links
+$link-hover-color: $base-theme-color;
+
+//Darken backgound body color.
+$body-bg-darken: #d0d0d0;
+
+//Default border color
+$border-color: #ddd !default;
+
+// Typography
+
+// Fonts Variables
+$font-family-headings: "Open Sans", Helvetica, Arial, sans-serif !default;
+$font-family-text: "Lora", "Georgia", serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-text !default;
+
+$line-height: 1.5 !default;
+
+// Buttons Variables
+$btn-secondary-color: #707070;
+
+// Info Colors
+$alert-color: #d52300;
+$info-color: #007ba5;
+$success-color: #008353;
+$warning-color: #9E6C00;

@@ -1,0 +1,103 @@
+/* -------------------------------------------------------
+*  11.0 Content
+*  ------------------------------------------------------*/
+
+
+/*
+* 11.1 Header
+*/
+
+.site-branding {
+  @include span-columns(3 of 4);
+  .site-title {
+    a {
+      text-shadow: none;
+      background-image: none;
+      border-bottom: none;
+    }
+  }
+}
+
+.main-navigation {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  .toggle-link {
+    font-size: 1.5em;
+    position: absolute;
+    min-width: unset;
+    border: none;
+    border-radius: 0;
+    padding: 0.8em;
+    margin: 0;
+    right: 1em;
+    z-index: 100;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $text-color;
+    }
+    &:active {
+      border-color: inherit;
+    }
+    .icon {
+      @include transition (all 0.4s ease-out);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      &.rotate {
+        transform: rotate(0.25turn);
+      }
+    }
+  }
+  ul.main-nav {
+    list-style: none;
+    padding: 50px 0 0 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: transparentize($base-theme-color, 0.1);
+    @include transition (all 0.4s ease-out);
+    &.is-toggled-on {
+      left: 0;
+    }
+    li {
+      padding: 0.5em;
+      text-align: center;
+      visibility: hidden;
+      &.is-visible {
+        visibility: visible;
+      }
+      a {
+        font-family: $font-family-headings;
+        color: #FFFFFF;
+        font-size: 1.4em;
+        font-weight: 700;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+
+/*
+* 11.2 Post ang Pages
+*/
+
+.sticky {}
+
+
+/*
+* 11.4 Comments
+*/
+
+.bypostauthor {
+  background: inherit;
+}

@@ -1,0 +1,99 @@
+/* -------------------------------------------------------
+*  5.0 Forms
+*  ------------------------------------------------------*/
+
+/*  Buttons  */
+button, .button {
+  font-family: $font-family-headings;
+  font-weight: 400;
+  min-width: 150px;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  padding: 0.8em 1.5em;
+  border: 2px solid $text-color;
+  border-radius: 5px;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s, color 0.3s linear;
+
+  &:hover {
+    color: $body-bg;
+    background-color: $text-color;
+  }
+  &:active {
+    border-color:$body-bg;
+  }
+
+  &.btn-secondary, &.btn-warning, &.btn-alert, &.btn-primary, &.btn-success {
+    &:hover {
+      color: $body-bg;
+    }
+    &:active {
+      border-color:$body-bg;
+    }
+  }
+
+  &.btn-secondary {
+    border-color: $btn-secondary-color;
+    color: $btn-secondary-color;
+    &:hover {
+      background-color: $btn-secondary-color;
+    }
+  }
+  &.btn-warning {
+    border-color: $warning-color;
+    color: $warning-color;
+    &:hover {
+      background-color: $warning-color;
+    }
+  }
+  &.btn-success {
+    border-color: $success-color;
+    color: $success-color;
+    &:hover {
+      background-color: $success-color;
+    }
+  }
+  &.btn-alert {
+    border-color: $alert-color;
+    color: $alert-color;
+    &:hover {
+      background-color: $alert-color;
+    }
+  }
+  &.btn-primary {
+    border-color: $info-color;
+    color: $info-color;
+    &:hover {
+      background-color: $info-color;
+      color: $body-bg;
+    }
+  }
+  &[disabled] {
+    background-color: #e9e9e9;
+    border-color: #e9e9e9;
+    color: #686868;
+    cursor: not-allowed;
+  }
+  &.btn-small {
+    font-size: em(16) * 0.875;
+  }
+  &.btn-large {
+    font-size: em(16) * 1.125;
+  }
+}
+
+a.button {
+  text-shadow:none;
+  background-image:none;
+  text-align: center;
+  &:hover, &:focus{
+    background-image:none;
+    text-shadow: none;
+  }
+}
