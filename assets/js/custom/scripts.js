@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
       $('.main-navigation').toggleClass('is-z-index');
       $('ul.main-nav').toggleClass('is-toggled-on');
       $('ul.main-nav li').toggleClass('is-visible');
-      $('#toggle-link .icon-menu').toggleClass('rotate');
+      $('#toggle-link').toggleClass('is-toggled');
     })
     //============================================================
     //    TABS, ACCORDION AND TOGGLES

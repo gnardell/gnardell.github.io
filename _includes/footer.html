@@ -1,39 +1,48 @@
-<div class="row-wrapper">
-  <div class="outer-container">
-    <footer class="site-footer">
+<footer class="site-footer">
+  <div class="row-wrapper">
+    <div class="outer-container">
 
       <h2 class="footer-heading">{{ site.title }}</h2>
 
-      <div class="footer-col-wrapper">
-        <div class="footer-col footer-col-1">
-          <ul class="contact-list">
-            <li>{{ site.title }}</li>
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          </ul>
-        </div>
 
-        <div class="footer-col footer-col-2">
-          <ul class="social-media-list">
-            {% if site.github_username %}
-            <li>
-              {% include icon-github.html username=site.github_username %}
-            </li>
-            {% endif %} {% if site.twitter_username %}
-            <li>
-              {% include icon-twitter.html username=site.twitter_username %}
-            </li>
-            {% endif %}
-          </ul>
-        </div>
 
-        <div class="footer-col footer-col-3">
-          <p>{{ site.description }}</p>
-        </div>
+      <ul class="contact-list">
+        <li>{{ site.title }}</li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+
+
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+          <a href="https://github.com/{{ site.github_username }}">
+            <svg class="icon icon-github ">
+              <use xlink:href="{{ "/assets/img/svg-icons/symbol-defs.svg#icon-github" | prepend: site.baseurl }}"></use>
+            </svg>
+            <span>{{ site.github_username }}</span>
+          </a>
+        </li>
+        {% endif %} {% if site.twitter_username %}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <svg class="icon icon-twitter ">
+              <use xlink:href="{{ "/assets/img/svg-icons/symbol-defs.svg#icon-twitter" | prepend: site.baseurl }}"></use>
+            </svg>
+            <span>{{ site.twitter_username }}</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+
+
+      <div class="footer-col footer-col-3 ">
+        <p>{{ site.description }}</p>
       </div>
-
-    </footer>
-<script type="text/javascript" src="{{ " /assets/js/vendors/jquery-2.2.3.min.js " | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ " /assets/js/vendors/svgxuse.js " | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ " /assets/js/custom/scripts.js " | prepend: site.baseurl }}"></script>
+    </div>
   </div>
-</div>
+
+</footer>
+<script type="text/javascript " src="{{ " /assets/js/vendors/jquery-2.2.3.min.js " | prepend: site.baseurl }} "></script>
+<script type="text/javascript " src="{{ " /assets/js/vendors/svgxuse.js " | prepend: site.baseurl }} "></script>
+<script type="text/javascript " src="{{ " /assets/js/vendors/prism.js " | prepend: site.baseurl }} "></script>
+<script type="text/javascript " src="{{ " /assets/js/custom/scripts.js " | prepend: site.baseurl }} "></script>

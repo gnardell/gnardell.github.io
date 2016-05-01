@@ -4,7 +4,13 @@
 
 
 /*Headings*/
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-family-headings;
   margin-top: 0.8em;
   text-rendering: optimizelegibility;
@@ -47,13 +53,12 @@ p {
   text-rendering: optimizelegibility;
 }
 
-
 blockquote {
   position: relative;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-style: italic;
-  quotes: "\201C\201D"; //"\2018""\2019";
+  quotes: "\201C" "\201D"; //"\2018""\2019";
   text-indent: 3em;
   &:before {
     content: open-quote;
@@ -70,7 +75,7 @@ blockquote {
   &:after {
     content: "";
   }
-  p{
+  p {
     margin-bottom: 0;
   }
   footer {
@@ -81,12 +86,12 @@ blockquote {
     margin-top: 0.8em;
     font-size: em(15);
     &:before {
-      content: "\2014\0020";
+      content: "\2014""\0020";
     }
   }
 }
 
-mark{
+mark {
   background-color: desaturate(lighten($base-theme-color, 40%), 40%);
   color: $text-color;
 }
