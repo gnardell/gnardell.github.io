@@ -2,27 +2,31 @@
 layout: default
 ---
 
-<div class="home">
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <article class="post-single">
+      <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-  <h1 class="page-heading">Posts</h1>
+      <p class="post-excerpt"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+      <div class="post-meta">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
 
-        <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
+        <ul class="post-categories">
+          {% for category in post.categories %}
+          <li>{{category}}</li>
+          {% endfor %}
+        </ul>
 
-        <p class="post-excerpt"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+      </div>
 
-        {{post.categories}}
-      </li>
-    {% endfor %}
-  </ul>
+      <a href="{{ post.url }}">Continua a leggere</a>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
 
-</div>
+<p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>

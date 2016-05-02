@@ -14,7 +14,6 @@
   }
 
   .tab-link {
-    @include remove-underline;
     display: block;
     padding: 0.3em 0.5em;
     margin-bottom: -1px;
@@ -45,7 +44,6 @@
   > li {
     border-bottom: 1px solid $border-color;
     & > a {
-      @include remove-underline;
       display: block;
       padding: 0.5em;
       margin-left: 1.2em;

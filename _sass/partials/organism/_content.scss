@@ -33,7 +33,7 @@
     min-width: unset;
     border: none;
     border-radius: 0;
-    padding: 0.8em;
+    padding: 0.6em;
     margin: 0;
     right: 1em;
     z-index: 100;
@@ -55,6 +55,7 @@
     }
     &.is-toggled {
       svg {
+        transform: rotate(0.25turn);
         path {
           fill: #fff;
         }
@@ -97,8 +98,13 @@
 /*
 * 11.2 Post ang Pages
 */
-
-.sticky {}
+.post-list{
+  list-style: none;
+  padding: 0;
+}
+a.post-link{
+  border-bottom: none;
+}
 
 
 /*
