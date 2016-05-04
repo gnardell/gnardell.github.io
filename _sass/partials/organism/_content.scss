@@ -111,3 +111,24 @@
 .bypostauthor {
   background: inherit;
 }
+
+/*
+* 11.6 Footer
+*/
+
+.site-footer {
+  background-color: #222222;
+  * {
+    color: #ffffff;
+  }
+}
+
+.footer-logo {
+  padding: 1em 0;
+  img {
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+}

@@ -2,16 +2,9 @@
   <div class="row-wrapper">
     <div class="outer-container">
 
-      <ul class="contact-list">
-        <li>
-          <a href="mailto:{{ site.email }}">
-            <svg class="icon icon-envelope">
-              <use xlink:href="{{ "/assets/img/svg-icons/symbol-defs.svg#icon-envelop" | prepend: site.baseurl }}"></use>
-            </svg>
-            <span>{{ site.email }}</span></a>
-        </li>
-      </ul>
-
+    <div class="footer-logo">
+      <img src="{{ "/assets/img/face.png" }}" alt="Caricatura di Giuseppe Nardella">
+    </div>
 
       <ul class="social-media-list">
         {% if site.github_username %}
@@ -34,6 +27,8 @@
         </li>
         {% endif %}
       </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
 
 
       <div class="footer-description">
