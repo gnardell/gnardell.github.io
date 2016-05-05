@@ -2,7 +2,6 @@
 *  11.0 Content
 *  ------------------------------------------------------*/
 
-
 /*
 * 11.1 Header
 */
@@ -156,6 +155,11 @@
     }
   }
 }
-.footer-copy p{
+.footer-copy {
+  padding: 1em 0;
+  border-top: 1px solid #ffffff;
+  p {
   font-size: 0.8em;
+  margin: 0;
+  }
 }
