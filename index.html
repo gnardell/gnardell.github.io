@@ -7,20 +7,19 @@ layout: default
   <li class="post-item">
     <article class="post-single">
       <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
-      <p class="post-excerpt"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-
+      
       <div class="post-meta">
-
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
-
         <ul class="post-categories">
           {% for category in post.categories %}
           <li>{{category}}</li>
           {% endfor %}
         </ul>
-
       </div>
+
+      <p class="post-excerpt"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
+      
 
       <a href="{{ post.url }}">Continua a leggere >></a>
 
