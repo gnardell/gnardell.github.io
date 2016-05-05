@@ -2,6 +2,7 @@
 *  11.0 Content
 *  ------------------------------------------------------*/
 
+
 /*
 * 11.1 Header
 */
@@ -97,7 +98,8 @@
 /*
 * 11.2 Post ang Pages
 */
-.post-list{
+
+.post-list {
   list-style: none;
   padding: 0;
 }
@@ -128,8 +130,8 @@
     font-weight: bold;
     margin-right: 0.5em;
     text-transform: uppercase;
-  &:last-child{
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
     }
     &::before {
       content: "#";
@@ -139,10 +141,10 @@
 
 a {
   &.post-read-more {
-  color: $base-theme-color;
-  font-family:  $font-family-headings;
-  font-size: 0.9em;
-  font-weight: bold;
+    color: $base-theme-color;
+    font-family: $font-family-headings;
+    font-size: 0.9em;
+    font-weight: bold;
   }
 }
 
@@ -154,6 +156,7 @@ a {
 .bypostauthor {
   background: inherit;
 }
+
 
 /*
 * 11.6 Footer
@@ -167,7 +170,7 @@ a {
   }
   a {
     &:link,
-    &:visited{
+    &:visited {
       color: #ffffff;
     }
   }
@@ -191,7 +194,7 @@ a {
     display: inline-block;
     margin-right: 20px;
     font-size: 1.5em;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
     a {
@@ -199,12 +202,13 @@ a {
     }
   }
 }
+
 .footer-copy {
-      padding: 0.4em 0 1em 0;
-    border-top: 1px solid #ffffff;
-    text-align: center;
+  padding: 0.4em 0 2em 0;
+  border-top: 1px solid #ffffff;
+  text-align: center;
   p {
-  font-size: 0.8em;
-  margin: 0.2em;
+    font-size: 0.8em;
+    margin: 0.2em;
   }
 }
