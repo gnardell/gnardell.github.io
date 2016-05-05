@@ -110,6 +110,7 @@
 .post-meta {
   time {
     font-size: 0.9em;
+    font-family: $font-family-headings;
     font-style: italic;
   }
 }
@@ -120,7 +121,10 @@
   li {
     display: inline-block;
     font-size: 0.9em;
+    font-family: $font-family-headings;
+    font-style: italic;
     margin-right: 0.5em;
+    text-transform: uppercase;
   &:last-child{
     margin-right: 0;
     }
