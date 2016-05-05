@@ -2,9 +2,11 @@
   <div class="row-wrapper">
     <div class="outer-container">
 
+{% if site.owner.avatar%}
     <div class="footer-logo">
-      <img src="{{ "/assets/img/face.png" }}" alt="Caricatura di Giuseppe Nardella">
+      <img src="{{ "/assets/img/bio-avatar.png" }}" alt="Avatar di Giuseppe Nardella">
     </div>
+    {% endif %}
 
       <ul class="social-media-list">
         {% if site.github_username %}
