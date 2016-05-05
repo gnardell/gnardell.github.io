@@ -120,11 +120,12 @@
   list-style: none;
   padding: 0;
   li {
+    color: $base-theme-color;
     display: inline-block;
     font-size: 0.9em;
     font-family: $font-family-headings;
     font-style: italic;
-    font-wight: bold;
+    font-weight: bold;
     margin-right: 0.5em;
     text-transform: uppercase;
   &:last-child{
