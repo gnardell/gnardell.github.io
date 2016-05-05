@@ -9,22 +9,22 @@
     {% endif %}
 
       <ul class="social-media-list">
-        {% if site.github_username %}
+        {% if site.owner.github %}
         <li>
           <a href="https://github.com/{{ site.github_username }}">
             <svg class="icon icon-github ">
               <use xlink:href="{{ "/assets/img/svg-icons/symbol-defs.svg#icon-github" | prepend: site.baseurl }}"></use>
             </svg>
-            <span>{{ site.github_username }}</span>
+            <span>{{ site.site.owner.github }}</span>
           </a>
         </li>
-        {% endif %} {% if site.twitter_username %}
+        {% endif %} {% if site.owner.twitter %}
         <li>
           <a href="https://twitter.com/{{ site.twitter_username }}">
             <svg class="icon icon-twitter ">
               <use xlink:href="{{ "/assets/img/svg-icons/symbol-defs.svg#icon-twitter" | prepend: site.baseurl }}"></use>
             </svg>
-            <span>{{ site.twitter_username }}</span>
+            <span>{{ site.site.owner.twitter }}</span>
           </a>
         </li>
         {% endif %}
