@@ -102,6 +102,18 @@
   padding: 0;
 }
 
+.post-title {
+  font-size: em(28);
+  margin: 1em 0 0.8em 0;
+}
+
+.post-meta {
+  time {
+    font-size: 0.9em;
+    font-style: italic;
+  }
+}
+
 
 /*
 * 11.4 Comments
