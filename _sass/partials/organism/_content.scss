@@ -141,7 +141,7 @@
     display: inline-block;
     margin-right: 20px;
     font-size: 1.5em;
-    &::list-child{
+    &:list-child{
       margin-right: 0;
     }
   }
