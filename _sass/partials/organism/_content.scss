@@ -135,7 +135,14 @@
 
 .social-media-list {
   list-style: none;
+  padding: 0;
+  text-align: center;
   li {
     display: inline-block;
+    margin-right: 20px;
+    font-size: 1.5em;
+    &::list-child{
+      margin-right: 0;
+    }
   }
 }
