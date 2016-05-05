@@ -117,9 +117,16 @@
 */
 
 .site-footer {
+  text-alingn: center;
   background-color: #222222;
   * {
     color: #ffffff;
+  }
+  a {
+    &:link,
+    &:visited{
+      color: #ffffff;
+    }
   }
 }
 
@@ -145,4 +152,7 @@
       margin-right: 0;
     }
   }
+}
+.footer-copy {
+  font-size: 0.8em;
 }
