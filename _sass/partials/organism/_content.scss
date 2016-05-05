@@ -138,10 +138,10 @@
 }
 
 a {
-  .post-read-more {
+  &.post-read-more {
   color: $base-theme-color;
   font-size: 0.9em;
-}
+  }
 }
 
 
