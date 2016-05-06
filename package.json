@@ -1,0 +1,19 @@
+{
+  "name": "actea",
+  "version": "1.0.0",
+  "description": "jekyll theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gnardell:@Nikonf90xd80@github.com/gnardell/gnardell.github.io.git"
+  },
+  "author": "gnardell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnardell/gnardell.github.io/issues"
+  },
+  "homepage": "https://github.com/gnardell/gnardell.github.io#readme"
+}
