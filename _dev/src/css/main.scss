@@ -1,7 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -42,28 +39,28 @@
 
  // Bourbon Framework
 
-@import "vendors/bourbon-framework/bourbon/bourbon";
-@import "vendors/bourbon-framework/neat/neat-helpers";
-@import "vendors/bourbon-framework/neat/grid-settings";
-@import "vendors/bourbon-framework/neat/neat";
+@import "sass/vendors/bourbon-framework/bourbon/bourbon";
+@import "sass/vendors/bourbon-framework/neat/neat-helpers";
+@import "sass/vendors/bourbon-framework/neat/grid-settings";
+@import "sass/vendors/bourbon-framework/neat/neat";
 
 
 // Mixins & Variables
 
-@import "partials/mixins";
-@import "partials/variables";
+@import "sass/partials/mixins";
+@import "sass/partials/variables";
 
-@import "vendors/normalize";
+@import "sass/vendors/normalize";
 
-@import "partials/atoms";
+@import "sass/partials/atoms";
 
-@import "vendors/syntax-highlighting";
+@import "sass/vendors/syntax-highlighting";
 
-@import "partials/layout";
+@import "sass/partials/layout";
 
-@import "partials/molecules";
+@import "sass/partials/molecules";
 
-@import "partials/organism";
+@import "sass/partials/organism";
 
 
 
