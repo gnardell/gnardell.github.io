@@ -5,6 +5,7 @@
 var styleSRC            = "./_dev/src/css/main.scss"; // Path to the main .scss file.
 var styleDestination    = "./assets/css"; // Path to place the compiled CSS file.
 
+
 var jsCustomSRC         = './_dev/src/js/custom/*.js'; // Path to JS custom scripts folder.
 var jsCustomDestination = './assets/js/custom'; // Path to place the compiled JS custom scripts file.
 var jsCustomFile        = 'scripts'; // Compiled JS custom file name.
@@ -43,14 +44,19 @@ var gulp            = require('gulp'); // Gulp of-course
 // CSS related plugins.
 var sass            = require('gulp-sass'); // Gulp pluign for Sass compilation.
 var autoprefixer    = require('gulp-autoprefixer'); // Autoprefixing magic.
+var mmq             = require('gulp-merge-media-queries'); // Combine matching media queries into one media query definition.
 
 // JS relate plugins.
 var uglify          = require('gulp-uglify');
 
 // Utility plugins.
 var rename          = require('gulp-rename'); // Renames files E.g. style.css -> style.min.css.
+var lineec          = require('gulp-line-ending-corrector'); // Consistent Line Endings for non UNIX systems. (A utility that makes sure your files have   consistent line endings).
+var notify          = require('gulp-notify'); // Sends message notification to you
 var cp              = require('child_process'); // Run Jekyll build whil Gulp process is running.
 var browserSync     = require('browser-sync'); // Reloads browser and injects CSS. Time-saving synchronised browser testing.
+
+const siteRoot      = '_site'
 
 
 var messages = {
@@ -78,7 +84,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
 * Wait for jekyll-build, then launch the Server
 */
-const siteRoot = '_site'
+
 gulp.task('browser-sync', ['styles', 'customJS', 'jekyll-build'], function() {
     browserSync.init({
     files: [siteRoot + '/**'],
@@ -112,8 +118,11 @@ gulp.task('styles', function(){
           precision: 10
         }))
         .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
+        .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
+        .pipe( mmq( { log: true } ) )
         .pipe(browserSync.reload({stream:true}))
         .pipe( gulp.dest( styleDestination ) )
+        .pipe( notify( { message: 'TASK: "styles" Completed! 💯', onLast: true } ) )
 });
 
 
@@ -135,8 +144,10 @@ gulp.task('customJS', function(){
             suffix: '.min'
         }))
         .pipe(uglify())
+        .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
         .pipe(browserSync.reload({stream:true}))
         .pipe( gulp.dest( jsCustomDestination ) )
+        .pipe( notify( { message: 'TASK: "customJS" Completed! 💯', onLast: true } ) )
 });
 
 
