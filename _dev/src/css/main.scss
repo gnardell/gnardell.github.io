@@ -39,28 +39,28 @@
 
  // Bourbon Framework
 
-@import "sass/vendors/bourbon-framework/bourbon/bourbon";
-@import "sass/vendors/bourbon-framework/neat/neat-helpers";
-@import "sass/vendors/bourbon-framework/neat/grid-settings";
-@import "sass/vendors/bourbon-framework/neat/neat";
+@import "scss/vendors/bourbon-framework/bourbon/bourbon";
+@import "scss/vendors/bourbon-framework/neat/neat-helpers";
+@import "scss/vendors/bourbon-framework/neat/grid-settings";
+@import "scss/vendors/bourbon-framework/neat/neat";
 
 
 // Mixins & Variables
 
-@import "sass/partials/mixins";
-@import "sass/partials/variables";
+@import "scss/partials/mixins";
+@import "scss/partials/variables";
 
-@import "sass/vendors/normalize";
+@import "scss/vendors/normalize";
 
-@import "sass/partials/atoms";
+@import "scss/partials/atoms";
 
-@import "sass/vendors/syntax-highlighting";
+@import "scss/vendors/syntax-highlighting";
 
-@import "sass/partials/layout";
+@import "scss/partials/layout";
 
-@import "sass/partials/molecules";
+@import "scss/partials/molecules";
 
-@import "sass/partials/organism";
+@import "scss/partials/organism";
 
 
 

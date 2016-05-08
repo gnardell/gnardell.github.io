@@ -12,9 +12,9 @@ var jsCustomFile        = 'scripts'; // Compiled JS custom file name.
                                     // Default set to custom i.e. custom.js.
 
 // Watch files paths.
-var styleWatchFiles     = './assets/_scss/**/*.scss'; // Path to all *.scss files inside css folder and inside them.
-var vendorJSWatchFiles  = './assets/js/vendors/*.js'; // Path to all vendors JS files.
-var customJSWatchFiles  = './assets/js/custom/*.js'; // Path to all custom JS files.
+var styleWatchFiles     = './_dev/src/css/scss/**/*.scss'; // Path to all *.scss files inside scss folder and inside them.
+var vendorJSWatchFiles  = './_dev/src/js/vendors/*.js'; // Path to all vendors JS files.
+var customJSWatchFiles  = './_dev/src/js/custom/*.js'; // Path to all custom JS files.
 
 // Browsers you care about for autoprefixing.
 // Browserlist https://github.com/ai/browserslist
@@ -161,7 +161,7 @@ gulp.task('customJS', function(){
 gulp.task('watch', function () {
     gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
     gulp.watch( customJSWatchFiles, [ 'customJS'] ); // Reload on customJS file changes.
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'assets/**/*'], ['jekyll-rebuild']);// Reload on Jekyll site changes.
 });
 
 
