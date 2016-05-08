@@ -48,7 +48,46 @@ var autoprefixer    = require('gulp-autoprefixer'); // Autoprefixing magic.
 var uglify          = require('gulp-uglify');
 
 // Utility plugins.
-var rename          = require('gulp-rename');
+var rename          = require('gulp-rename'); // Renames files E.g. style.css -> style.min.css.
+var cp              = require('child_process'); // Run Jekyll build whil Gulp process is running.
+var browserSync     = require('browser-sync'); // Reloads browser and injects CSS. Time-saving synchronised browser testing.
+
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
+
+/**
+ * Build the Jekyll Site
+ */
+var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+
+gulp.task('jekyll-build', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( jekyll, ['build'], {stdio: 'inherit'})
+        .on('close', done);
+});
+
+/**
+* Rebuild Jekyll & do page reload
+*/
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+    browserSync.reload();
+});
+
+/**
+* Wait for jekyll-build, then launch the Server
+*/
+const siteRoot = '_site'
+gulp.task('browser-sync', ['styles', 'customJS', 'jekyll-build'], function() {
+    browserSync.init({
+    files: [siteRoot + '/**'],
+    port: 4000,
+    server: {
+      baseDir: siteRoot
+    }
+  });
+});
 
 /**
  * Task: `styles`.
@@ -58,11 +97,8 @@ var rename          = require('gulp-rename');
  * This task does the following:
  *     1. Gets the source scss file
  *     2. Compiles Sass to CSS
- *     3. Writes Sourcemaps for it
- *     4. Autoprefixes it and generates style.css
- *     5. Renames the CSS file with suffix .min.css
- *     6. Minifies the CSS file and generates style.min.css
- *     7. Injects CSS or reloads the browser via browserSync
+ *     3. Autoprefixes it and generates style.css
+ *     4. Injects CSS or reloads the browser via browserSync
  */
 
 gulp.task('styles', function(){
@@ -76,6 +112,7 @@ gulp.task('styles', function(){
           precision: 10
         }))
         .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
+        .pipe(browserSync.reload({stream:true}))
         .pipe( gulp.dest( styleDestination ) )
 });
 
@@ -98,16 +135,24 @@ gulp.task('customJS', function(){
             suffix: '.min'
         }))
         .pipe(uglify())
+        .pipe(browserSync.reload({stream:true}))
         .pipe( gulp.dest( jsCustomDestination ) )
 });
+
+
 
 /**
  * Watch Tasks.
  *
  * Watches for file changes and runs specific tasks.
  */
-gulp.task( 'default', ['styles', 'customJS'], function () {
+
+gulp.task('watch', function () {
     gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
-    //gulp.watch( vendorJSWatchFiles, [ 'vendorsJs', reload ] ); // Reload on vendorsJs file changes.
     gulp.watch( customJSWatchFiles, [ 'customJS'] ); // Reload on customJS file changes.
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html'], ['jekyll-rebuild']);
 });
+
+
+
+gulp.task( 'default', ['browser-sync', 'customJS', 'watch']);

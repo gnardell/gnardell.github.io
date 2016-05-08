@@ -23,6 +23,7 @@ exclude: ["_dev",
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:slug.html
 
 # Site owner
 owner:
