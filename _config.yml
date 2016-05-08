@@ -19,7 +19,8 @@ logo: #site-logo
 exclude: ["_dev",
           "gulpfile.js",
           "node_modules",
-          "package.json"]
+          "package.json",
+          "CNAME"]
 
 # Build settings
 markdown: kramdown
