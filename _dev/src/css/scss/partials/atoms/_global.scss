@@ -47,6 +47,9 @@ html {
   @include media($small) {
     font-size: em(18);
   }
+  @include media ($medium) {
+    font-size: em(21);
+  }
 }
 
 body {

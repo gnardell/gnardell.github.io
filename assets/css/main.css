@@ -1947,6 +1947,10 @@ table tbody td[data-title]:before {
 
 @media screen and (min-width: 60em) {
 
+html {
+	font-size: 1.3125em;
+}
+
 table {
 	font-size: .9em;
 }
