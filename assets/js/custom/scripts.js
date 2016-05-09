@@ -32,11 +32,12 @@ jQuery(document).ready(function ($) {
     }
 
     if (!checkSize()) {
-
       $('ul.main-nav').attr('aria-hidden', true).attr('aria-labelledby', 'menu-button');
       $('#menu-button').attr('aria-hidden', false).attr('aria-expanded', false);
     }
   }
+
+
   $('#menu-button').on('click', function () {
     if (!checkSize()) {
       $('.main-navigation').toggleClass('is-z-index');
