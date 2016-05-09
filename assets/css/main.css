@@ -511,6 +511,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	overflow-x: hidden;
 	background-color: transparent;
 	font-family: "Lora", "Georgia", serif;
 	font-style: normal;
@@ -1414,38 +1415,22 @@ section::after {
 	display: table;
 }
 
-header[role="banner"] {
-	float: left;
-	display: block;
-	margin-right: 7.4229703521%;
-	width: 100%;
+/*
+//Page header
+header[role="banner"]{
+  @include span-columns(4);
 }
 
-header[role="banner"]:last-child {
-	margin-right: 0;
+//Page footer
+footer[role="contentinfo"]{
+  @include span-columns(4);
 }
 
-footer[role="contentinfo"] {
-	float: left;
-	display: block;
-	margin-right: 7.4229703521%;
-	width: 100%;
-}
-
-footer[role="contentinfo"]:last-child {
-	margin-right: 0;
-}
-
+//Main content
 main {
-	float: left;
-	display: block;
-	margin-right: 7.4229703521%;
-	width: 100%;
+  @include span-columns(4);
 }
-
-main:last-child {
-	margin-right: 0;
-}
+*/
 
 /*Images*/
 
@@ -1719,7 +1704,8 @@ img {
 	float: left;
 	display: block;
 	margin-right: 7.4229703521%;
-	width: 73.144257412%;
+	width: 100%;
+	margin-right: 0;
 }
 
 .site-branding:last-child {
@@ -1727,8 +1713,6 @@ img {
 }
 
 .site-branding .site-title a {
-	text-shadow: none;
-	background-image: none;
 	border-bottom: none;
 }
 
@@ -1788,7 +1772,7 @@ img {
 	list-style: none;
 	padding: 80px 0 0 0;
 	margin: 0;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	bottom: 0;
@@ -2015,6 +1999,35 @@ table tbody td {
 
 table tbody td[data-title]:before {
 	content: none;
+}
+
+.site-branding .site-title {
+	text-align: center;
+}
+
+.main-navigation .menu-button {
+	visibility: hidden;
+}
+
+.main-navigation ul.main-nav {
+	text-align: center;
+	padding-top: 40px;
+	position: static;
+	width: auto;
+	top: auto;
+	bottom: auto;
+	left: auto;
+	background-color: transparent;
+}
+
+.main-navigation ul.main-nav li {
+	visibility: visible;
+	display: inline-block;
+}
+
+.main-navigation ul.main-nav li a {
+	color: #000000;
+	font-weight: 400;
 }
 
 }
