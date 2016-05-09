@@ -32,58 +32,71 @@ jQuery(document).ready(function ($) {
     }
 
     if (!checkSize()) {
-      $('#menu-button').on('click', function () {
-        $('.main-navigation').toggleClass('is-z-index');
-        $('ul.main-nav').toggleClass('is-toggled-on');
-        $('ul.main-nav li').toggleClass('is-visible');
-        $(this).toggleClass('is-toggled');
-        var state = $(this).attr('aria-expanded') === 'false' ? true : false;
-        $(this).attr('aria-expanded', state);
-        $('ul.main-nav').attr('aria-hidden', !state);
-      })
 
-      // At end of navigation block, return focus to navigation menu button
-      $('ul.main-nav li:last-child a').on('keydown', function (e) {
-        if (e.keyCode === 9) {
+      $('ul.main-nav').attr('aria-hidden', true).attr('aria-labelledby', 'menu-button');
+      $('#menu-button').attr('aria-hidden', false).attr('aria-expanded', false);
+    }
+  }
+  $('#menu-button').on('click', function () {
+    if (!checkSize()) {
+      $('.main-navigation').toggleClass('is-z-index');
+      $('ul.main-nav').toggleClass('is-toggled-on');
+      $('ul.main-nav li').toggleClass('is-visible');
+      $(this).toggleClass('is-toggled');
+      var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+      $(this).attr('aria-expanded', state);
+      $('ul.main-nav').attr('aria-hidden', !state);
+    }
+  })
+
+  // At end of navigation block, return focus to navigation menu button
+  $('ul.main-nav li:last-child a').on('keydown', function (e) {
+    if (!checkSize()) {
+      if (e.keyCode === 9) {
+        if (!e.shiftKey) {
+          e.preventDefault();
+          $('#menu-button').focus();
+        }
+      }
+    }
+  });
+
+  // At start of navigation block, refocus close button on SHIFT+TAB
+  $('ul.main-nav li:first-child a').on('keydown', function (e) {
+    if (!checkSize()) {
+      if (e.keyCode === 9) {
+        if (e.shiftKey) {
+          e.preventDefault();
+          $('#menu-button').focus();
+        }
+      }
+    }
+  });
+
+  // If the menu is visible, always TAB into it from the menu button
+  $('button[aria-expanded]').on('keydown', function (e) {
+    if (!checkSize()) {
+      if (e.keyCode === 9) {
+        if ($(this).attr('aria-expanded') == 'true') {
           if (!e.shiftKey) {
             e.preventDefault();
-            $('#menu-button').focus();
-          }
-        }
-      });
-
-      // At start of navigation block, refocus close button on SHIFT+TAB
-      $('ul.main-nav li:first-child a').on('keydown', function (e) {
-        if (e.keyCode === 9) {
-          if (e.shiftKey) {
-            e.preventDefault();
-            $('#menu-button').focus();
-          }
-        }
-      });
-
-      // If the menu is visible, always TAB into it from the menu button
-      $('button[aria-expanded]').on('keydown', function (e) {
-        if (e.keyCode === 9) {
-          if ($(this).attr('aria-expanded') == 'true') {
-            if (!e.shiftKey) {
+            $('ul.main-nav li:first-child a').focus();
+          } else {
+            if (e.shiftKey) {
               e.preventDefault();
-              $('ul.main-nav li:first-child a').focus();
-            } else {
-              if (e.shiftKey) {
-                e.preventDefault();
-                $('#main').focus();
-              }
+              $('#main').focus();
             }
           }
         }
-      });
+      }
     }
-  }
+  });
+
 
   toggleNavigation();
 
-  $(window).resize(toggleNavigation);
+
+  $(window).on('resize', toggleNavigation);
 
 
 
