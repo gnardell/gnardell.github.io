@@ -533,7 +533,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	margin-top: 0.8em;
 	text-rendering: optimizelegibility;
 	margin-bottom: 0.375em;
@@ -735,7 +735,7 @@ table tbody td[data-title]:before {
 
 button,
 .button {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	min-width: 150px;
 	display: inline-block;
@@ -1061,7 +1061,7 @@ a:hover {
 	width: auto;
 	height: auto;
 	padding: 15px 23px 14px;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	color: #097380;
 	background-color: #fefefe;
@@ -1797,7 +1797,7 @@ img {
 }
 
 .main-navigation ul.main-nav li a {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	color: #FFFFFF;
 	font-size: 1.4em;
 	font-weight: 700;
@@ -1820,7 +1820,7 @@ img {
 
 .post-meta time {
 	font-size: 0.9em;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -1834,7 +1834,7 @@ img {
 	color: #097380;
 	display: inline-block;
 	font-size: 0.9em;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: bold;
 	margin-right: 0.5em;
@@ -1851,7 +1851,7 @@ img {
 
 a.post-read-more {
 	color: #097380;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-size: 0.9em;
 	font-weight: bold;
 }
