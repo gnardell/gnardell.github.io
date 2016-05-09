@@ -1743,7 +1743,7 @@ img {
 	z-index: 1;
 }
 
-.main-navigation .toggle-link {
+.main-navigation .menu-button {
 	font-size: 1.5em;
 	position: absolute;
 	min-width: unset;
@@ -1755,17 +1755,17 @@ img {
 	z-index: 100;
 }
 
-.main-navigation .toggle-link:hover,
-.main-navigation .toggle-link:focus {
+.main-navigation .menu-button:hover,
+.main-navigation .menu-button:focus {
 	background-color: transparent;
 	color: #232221;
 }
 
-.main-navigation .toggle-link:active {
+.main-navigation .menu-button:active {
 	border-color: inherit;
 }
 
-.main-navigation .toggle-link svg {
+.main-navigation .menu-button svg {
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	display: inline-block;
@@ -1774,13 +1774,13 @@ img {
 	vertical-align: middle;
 }
 
-.main-navigation .toggle-link.is-toggled svg {
+.main-navigation .menu-button.is-toggled svg {
 	-webkit-transform: rotate(0.25turn);
 	-ms-transform: rotate(0.25turn);
 	transform: rotate(0.25turn);
 }
 
-.main-navigation .toggle-link.is-toggled svg path {
+.main-navigation .menu-button.is-toggled svg path {
 	fill: #fff;
 }
 

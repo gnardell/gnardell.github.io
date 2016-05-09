@@ -18,11 +18,15 @@ jQuery(document).ready(function ($) {
   //    Main Navigation
   //============================================================
 
-  $('.toggle-link').on('click', function () {
+  $('.menu-button').on('click', function () {
       $('.main-navigation').toggleClass('is-z-index');
       $('ul.main-nav').toggleClass('is-toggled-on');
       $('ul.main-nav li').toggleClass('is-visible');
-      $('#toggle-link').toggleClass('is-toggled');
+      $(this).toggleClass('is-toggled');
+      var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+      console.log(state);
+      $(this).attr('aria-expanded', state);
+      $('ul.main-nav').attr('aria-hidden', !state);
     })
     //============================================================
     //    TABS, ACCORDION AND TOGGLES

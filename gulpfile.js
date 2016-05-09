@@ -139,6 +139,7 @@ gulp.task('styles', function(){
 
 gulp.task('customJS', function(){
     gulp.src(jsCustomSRC)
+        .pipe( gulp.dest( jsCustomDestination ) )//Make a copy of beauty JS in js assets
         .pipe(rename({
             basename: jsCustomFile,
             suffix: '.min'
