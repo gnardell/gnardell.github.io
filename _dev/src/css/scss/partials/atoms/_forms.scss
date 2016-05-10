@@ -1,0 +1,134 @@
+/* Elements */
+
+label {
+  //display: block;
+  font-size: 1.6rem;
+  margin-bottom: .2em;
+  text-transform: uppercase;
+}
+
+select, textarea {
+  padding: .8em 1.0em;
+  width: 100%;
+  font-size: 1em;
+  color: #333;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  background: $body-bg;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+textarea {
+  min-height: 9em;
+}
+
+input {
+  &:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]) {
+    padding: .8em 1.0em;
+    width: 100%;
+    font-size: 1em;
+    color: #333;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    background: $body-bg;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+  }
+}
+
+fieldset {
+  margin-bottom: 1.5em;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+}
+
+/*//Select boxes
+.select-box-inner {
+  position: relative;
+  overflow: hidden;
+  &:focus, &:hover, &:active {
+    cursor: pointer;
+  }
+  svg {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    padding: 1em;
+    width: 52px;
+    height: 52px;
+    fill: #777;
+    border: 1px solid $border-color;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  select {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//Input file
+.input-file-container {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  &:focus, &:hover, &:active {
+    cursor: pointer;
+  }
+  label {
+    //position: absolute;
+    height: 78px;
+    width: 100%;
+    cursor: pointer;
+  }
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+  .input-file-inner {
+    border: 1px solid $border-color;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 28px;
+    border-radius: 2px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 1em;
+    z-index: -1;
+    #input-file-name {
+      font-size: 14px;
+      font-size: 1.4rem;
+    }
+    svg {
+      position: absolute;
+      right: -1px;
+      top: -1px;
+      padding: 1em;
+      width: 52px;
+      height: 52px;
+      fill: #777;
+      border: 1px solid $border-color;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+}*/

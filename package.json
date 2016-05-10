@@ -1,0 +1,31 @@
+{
+  "name": "actea",
+  "version": "1.0.0",
+  "description": "jekyll theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gnardell:@Nikonf90xd80@github.com/gnardell/gnardell.github.io.git"
+  },
+  "author": "gnardell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnardell/gnardell.github.io/issues"
+  },
+  "homepage": "https://github.com/gnardell/gnardell.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  }
+}

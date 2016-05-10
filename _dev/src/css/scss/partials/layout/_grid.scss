@@ -1,0 +1,26 @@
+/* General Page Elements for NEAT GRID*/
+.row-wrapper {
+  @include row();
+  @include pad(0 default);
+
+  .outer-container {
+    @include outer-container;
+  }
+}
+
+/*
+//Page header
+header[role="banner"]{
+  @include span-columns(4);
+}
+
+//Page footer
+footer[role="contentinfo"]{
+  @include span-columns(4);
+}
+
+//Main content
+main {
+  @include span-columns(4);
+}
+*/

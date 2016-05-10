@@ -1,0 +1,97 @@
+/* -------------------------------------------------------
+*  3.0 Typography
+*  ------------------------------------------------------*/
+
+
+/*Headings*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headings;
+  margin-top: 0.8em;
+  text-rendering: optimizelegibility;
+  margin-bottom: 0.375em;
+}
+
+h1 {
+  font-size: em(24);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: em(21);
+  line-height: 1.18;
+}
+
+h3 {
+  font-size: em(19);
+  line-height: 1.15;
+}
+
+h4 {
+  font-size: em(17);
+  line-height: 1.13;
+}
+
+h5 {
+  font-size: em(16);
+  line-height: 1.13;
+}
+
+h6 {
+  font-size: em(15);
+  line-height: 1.13;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-rendering: optimizelegibility;
+}
+
+blockquote {
+  position: relative;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-style: italic;
+  quotes: "\201C" "\201D"; //"\2018""\2019";
+  text-indent: 3em;
+  &:before {
+    content: open-quote;
+    position: absolute;
+    top: -0.2em;
+    left: -0.6em;
+    //font-family: $font-family-headings;
+    font-size: 4em;
+    font-weight: 700;
+    //line-height: 0em;
+    margin-right: 0.25em;
+    //vertical-align: -0.36em;
+  }
+  &:after {
+    content: "";
+  }
+  p {
+    margin-bottom: 0;
+  }
+  footer {
+    text-align: right;
+  }
+  cite {
+    display: inline-block;
+    margin-top: 0.8em;
+    font-size: em(15);
+    &:before {
+      content: "\2014""\0020";
+    }
+  }
+}
+
+mark {
+  background-color: desaturate(lighten($base-theme-color, 40%), 40%);
+  color: $text-color;
+}

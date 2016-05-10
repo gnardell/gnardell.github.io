@@ -1,0 +1,36 @@
+/*===========================================
+* Tipgraphy Molecules
+============================================*/
+.lead {
+  font-size: em(21);
+}
+
+.tagline{
+  margin: 2em 0;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  border-top: 1px dashed #999;
+  border-bottom: 1px dashed #999;
+  text-align: center;
+}
+
+
+.aligncenter {
+  display: block;
+  margin: 1.8em auto;
+  clear: both;
+}
+
+.alignleft {
+  float: left;
+  margin: .3em 2em 2em 0;
+}
+
+.alignright {
+  float: right;
+  margin: .3em 0 2em 2em;
+}
+
+.alignleft:first-child, .alignright:first-child {
+  margin-top: 1.2em;
+}
