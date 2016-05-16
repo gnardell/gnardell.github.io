@@ -6,7 +6,7 @@ categories: general
 
 Se ti sei mai chiesto quale sia la differenza tra internet e web, oppure tra client e server, le righe che seguono potranno esserti di aiuto.
 
-##1. La differenza fra Internet e Web  
+## La differenza fra Internet e Web  
 
 Iniziamo facendo chiarezza su due termini che spesso vengono impiegati uno al posto dell'altro.
 
