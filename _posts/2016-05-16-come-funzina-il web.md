@@ -24,7 +24,7 @@ Inoltre ormai tutti i browser includono dei tool che facilitano lo sviluppo di s
 
 Sta a ognuno testare i vari browser e poi scegliere quello più idoneo alle proprie esigenze.
 
-3. I Server Web
+##3. I Server Web
 
 Ma dove si trovano le informazioni a cui vogliamo accedere con i browser?
 Esistono dei computer costantemente collegati a internet, i **server** , su cui girano delle particolari applicazioni chiamate appunto **server web**. I server hanno il compito di gestire le richieste di pagine web di un **client**, dove invece è installato il browser (un computer personale, un tablet o uno smartphone). La comunicazione tra server e client avviene tramite il protocollo HTTP, o nella versione sicura, tramite HTTPS.
