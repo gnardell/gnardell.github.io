@@ -6,7 +6,8 @@ categories: general
 
 Se ti sei mai chiesto quale sia la differenza tra internet e web, oppure tra client e server, le righe che seguono potranno esserti di aiuto.
 
-##1. La differenza fra Internet e Web
+##1. La differenza fra Internet e Web  
+
 Iniziamo facendo chiarezza su due termini che spesso vengono impiegati uno al posto dell'altro.
 
 <dfn>**Internet**</dfn>, spesso definita la *"rete delle reti"*, è un insieme di reti di computer sparse per il mondo e collegate tra loro, al fine di **scambiare informazioni** fra gli utenti che vi accedono.
