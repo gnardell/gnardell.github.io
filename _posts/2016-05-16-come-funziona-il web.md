@@ -15,7 +15,7 @@ Le modalità impiegate per questo scambio sono di vario tipo: email, trasferimen
 
 Il <dfn>**World Wide Web**</dfn> (abbreviato semplicemente con Web), è uno dei servizi che utilizzano internet per lo scambio di informazioni. La sua caratteristica principale consiste nella possibilità di usufruire di **contenuti**, collegati tra loro attraverso **collegamenti ipertestuali**, comunemente chiamati <dfn>**link**</dfn>. Il protocollo impiegato è l'<abbr>**HTTP**</abbr> (HyperText Transfer Protocol).
 
-##2. Qualche parola sui Browser
+## 2. Qualche parola sui Browser
 Per poter accedere al Web vengono impiegati dei software chiamati <dfn>**web browser**</dfn> o più semplicemente **browser**. Alcuni di questi vengono forniti direttamente con il sistema operativo impiegato dal computer: Internet Explorer è il browser per i sistemi operativi Windows e Safari per OS X. Altri invece possono essere installati in un secondo momento, come Chrome, Firefox, Opera e altri meno diffusi.
 Di questi esistono poi le versioni per i dispositivi mobili (iPhone, iPad, dispositivi che utilizzano Android e molti altri).
 
