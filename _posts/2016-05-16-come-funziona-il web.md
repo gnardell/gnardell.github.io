@@ -43,19 +43,19 @@ Oltre a questi dispositivi di uso comune, bisogna tenere presente che esistono u
 Ogni pagina e risorsa sul Web possiede il suo indirizzo univoco chiamato <dfn>**URL**</dfn> (Uniform Resource Locator).
 Vediamo quali sono le parti che compongono un URL.
 
-* **http://**
+* **`http://`**  
 La prima parte che compone l'URL definisce il protocollo impiegato per lo scambio di informazioni, generalmente HTTP o HTTPS (versione sicura).
 
-* **www.ilmiosito.it**
+* **`www.ilmiosito.it`**  
 La parte successiva è il <dfn>**nomehost**</dfn> e rappresenta l'indirizzo fisico del server dove risiede la risorsa. Può essere espresso, come nel nostro caso con un <dfn>**nome di dominio**</dfn> (www.miosito.it) o direttamente tramite l'<dfn>**indirizzo IP**</dfn> (un'etichetta numerica che identifica in maniera univoca il server, come 107.137.205.80).
 
-* **/esempi/capitolo_1/prova.html**
+* **`/esempi/capitolo_1/prova.html`**  
 L'ultima parte rappresenta il percorso assoluto alla risorsa che stiamo cercando: *prova.html*. Le parole separate dagli slash rappresentano i nomi delle directory e iniziano con la directory principale (indicata dallo / iniziale).
 
 Avrete notato che non sempre l'ultima parte dell'URL è composta dal nome della risorsa, ma puntano a una directory:
 
-* http://www.miosito.it
-* http://www.miosito.it/esempi/
+* `http://www.miosito.it`
+* `http://www.miosito.it/esempi/`
 
 Quando il server riceve una richiesta di questo tipo, cerca nella directory il documento di default, solitamente *index.html*. Alcuni server possono anche utilizzare *defalut.htm*. Inoltre se per la realizzazione del documento è stato impiegato un linguaggio di programmazione **server-side**, il documento di default può essere *index.php* oppure *index.asp*.
 
@@ -69,7 +69,7 @@ Per concludere vediamo quali sono le fasi tipiche che occorrono prima che il doc
     * se non trova la risorsa, restituisce un **errore 404** (Risorsa non trovata),
     * se il documento viene trovato, invia quest'ultimo al nostro browser.
 
-4. Il browser a questo punto analizza il documento, se al suo interno sono contenute video, immagini, file musicali o altre risorse esterne, invia nuovamente una richiesta al server per ottenere queste nuove risorse.
+4. Il browser a questo punto analizza il documento, se al suo interno sono contenuti video, immagini, file musicali o altre risorse esterne, invia nuovamente una richiesta al server per ottenere queste nuove risorse.
 5. A questo il browser inserisce nella pagina HTML le nuove risorse ottenute, visualizzando il documento completo sul monitor.
 
 Spero che l'articolo sia stato di gradimento.
