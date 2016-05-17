@@ -32,7 +32,6 @@ Esistono dei computer costantemente collegati a internet, i **server** , su cui 
 
 Spesso la denominazione server web viene impiegata anche per indicare il computer che ospita le pagine web.
 
-
 ## Come si accede al Web
 
 Dalle righe precedenti si può intuire che l'accesso al Web avviene tramite dispositivi di vario tipo e formato: desktop, laptop, tablet, smartphone, tv, console per videogiochi e in futuro ne potrebbero essere aggiunti di altri.
@@ -44,13 +43,13 @@ Oltre a questi dispositivi di uso comune, bisogna tenere presente che esistono u
 Ogni pagina e risorsa sul Web possiede il suo indirizzo univoco chiamato <dfn>**URL**</dfn> (Uniform Resource Locator).
 Vediamo quali sono le parti che compongono un URL.
 
-**http://**
+* **http://**
 La prima parte che compone l'URL definisce il protocollo impiegato per lo scambio di informazioni, generalmente HTTP o HTTPS (versione sicura).
 
-**www.ilmiosito.it**
+* **www.ilmiosito.it**
 La parte successiva è il <dfn>**nomehost**</dfn> e rappresenta l'indirizzo fisico del server dove risiede la risorsa. Può essere espresso, come nel nostro caso con un <dfn>**nome di dominio**</dfn> (www.miosito.it) o direttamente tramite l'<dfn>**indirizzo IP**</dfn> (un'etichetta numerica che identifica in maniera univoca il server, come 107.137.205.80).
 
-**/esempi/capitolo_1/prova.html**
+* **/esempi/capitolo_1/prova.html**
 L'ultima parte rappresenta il percorso assoluto alla risorsa che stiamo cercando: *prova.html*. Le parole separate dagli slash rappresentano i nomi delle directory e iniziano con la directory principale (indicata dallo / iniziale).
 
 Avrete notato che non sempre l'ultima parte dell'URL è composta dal nome della risorsa, ma puntano a una directory:
