@@ -15,7 +15,7 @@ Le modalità impiegate per questo scambio sono di vario tipo: email, trasferimen
 
 Il <dfn>**World Wide Web**</dfn> (abbreviato semplicemente con Web), è uno dei servizi che utilizzano internet per lo scambio di informazioni. La sua caratteristica principale consiste nella possibilità di usufruire di **contenuti**, collegati tra loro attraverso **collegamenti ipertestuali**, comunemente chiamati <dfn>**link**</dfn>. Il protocollo impiegato è l'<abbr>**HTTP**</abbr> (HyperText Transfer Protocol).
 
-## 2. Qualche parola sui Browser  
+## Qualche parola sui Browser  
 
 Per poter accedere al Web vengono impiegati dei software chiamati <dfn>**web browser**</dfn> o più semplicemente **browser**. Alcuni di questi vengono forniti direttamente con il sistema operativo impiegato dal computer: Internet Explorer è il browser per i sistemi operativi Windows e Safari per OS X. Altri invece possono essere installati in un secondo momento, come Chrome, Firefox, Opera e altri meno diffusi.
 Di questi esistono poi le versioni per i dispositivi mobili (iPhone, iPad, dispositivi che utilizzano Android e molti altri).
@@ -25,7 +25,7 @@ Inoltre ormai tutti i browser includono dei tool che facilitano lo sviluppo di s
 
 Sta a ognuno testare i vari browser e poi scegliere quello più idoneo alle proprie esigenze.
 
-## 3. I Server Web
+## I Server Web
 
 Ma dove si trovano le informazioni a cui vogliamo accedere con i browser?
 Esistono dei computer costantemente collegati a internet, i **server** , su cui girano delle particolari applicazioni chiamate appunto **server web**. I server hanno il compito di gestire le richieste di pagine web di un **client**, dove invece è installato il browser (un computer personale, un tablet o uno smartphone). La comunicazione tra server e client avviene tramite il protocollo HTTP, o nella versione sicura, tramite HTTPS.
@@ -33,13 +33,13 @@ Esistono dei computer costantemente collegati a internet, i **server** , su cui 
 Spesso la denominazione server web viene impiegata anche per indicare il computer che ospita le pagine web.
 
 
-## 4. Come si accede al Web
+## Come si accede al Web
 
 Dalle righe precedenti si può intuire che l'accesso al Web avviene tramite dispositivi di vario tipo e formato: desktop, laptop, tablet, smartphone, tv, console per videogiochi e in futuro ne potrebbero essere aggiunti di altri.
 
 Oltre a questi dispositivi di uso comune, bisogna tenere presente che esistono ulteriori modalità di accesso al Web: le **tecnologie assistive**. Queste altro non sono che quelle tecnologie (sia hardware che software), realizzate ad hoc per rendere **accessibili e usabili** anche a persone con **disabilità**.
 
-## 5. Un indirizzo per le risorse Web: l'URL
+## Un indirizzo per le risorse Web: l'URL
 
 Ogni pagina e risorsa sul Web possiede il suo indirizzo univoco chiamato <dfn>**URL**</dfn> (Uniform Resource Locator).
 Vediamo quali sono le parti che compongono un URL.
@@ -60,7 +60,7 @@ Avrete notato che non sempre l'ultima parte dell'URL è composta dal nome della 
 
 Quando il server riceve una richiesta di questo tipo, cerca nella directory il documento di default, solitamente *index.html*. Alcuni server possono anche utilizzare *defalut.htm*. Inoltre se per la realizzazione del documento è stato impiegato un linguaggio di programmazione **server-side**, il documento di default può essere *index.php* oppure *index.asp*.
 
-## \6. Mettiamo tutto insieme.
+## Mettiamo tutto insieme.
 Per concludere vediamo quali sono le fasi tipiche che occorrono prima che il documento web che cerchiamo sia visaulizzato nel nostro browser.
 
 1. La **richiesta** di una pagina web inizia nel momento in cui digitiamo l'URL nel browser o quando clicchiamo su un link. Come abbiamo visto l'URL contiene tutte le informazioni per arrivare a una specifica risorsa che si trova su uno specifico server in Internet.
