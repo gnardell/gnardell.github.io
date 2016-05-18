@@ -45,7 +45,7 @@ Avremo quindi un elenco di voci per il nostro menu rappresentato da una **lista 
 
 Aggiungiamo adesso qualche regola CSS per cambiare l'**aspetto** del nostro menù.
 
-<p data-height="346" data-theme-id="11923" data-slug-hash="YPrNXM" data-default-tab="result" data-user="gnardella" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/gnardella/pen/YPrNXM/">PE_CSS</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="11923" data-slug-hash="YPrNXM" data-default-tab="result" data-user="gnardella" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/gnardella/pen/YPrNXM/">PE_CSS</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 A questo punto l'aspetto assomiglia effettivamente a quello di un menù a schede. Inoltre è migliorata la navigazione perché non dobbiamo utilizzare la barra di scorrimento per avere di nuovo accesso alle voci del menù.
@@ -53,7 +53,7 @@ A questo punto l'aspetto assomiglia effettivamente a quello di un menù a schede
 ### 3. Un po' di movimento
 Infine miglioriamo la nostra **user experience** (okay sto esagerando).
 
-<p data-height="300" data-theme-id="11923" data-slug-hash="MYEJvr" data-default-tab="result" data-user="gnardella" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/gnardella/pen/MYEJvr/">PE_Javascript</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="11923" data-slug-hash="MYEJvr" data-default-tab="result" data-user="gnardella" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/gnardella/pen/MYEJvr/">PE_Javascript</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Con l'aggiunta di qualche riga di javascript vengono mostrate le schede che ci interessano, inoltre il contenitore delle stesse si adatta al contenuto.
