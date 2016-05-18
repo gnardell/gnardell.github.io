@@ -35,24 +35,25 @@ Nell'esempio che segue, realizzeremo un menù a schede (tab box). Niente di comp
 Partiamo quindi dalla struttura delle nostre schede, che a livello elementare non sono altro dei link che puntano a altri elementi nella stessa pagina.
 
 Avremo quindi un elenco di voci per il nostro menu rappresentato da una **lista non ordinata **che puntano a delle **sezioni**.
+
 <p class="codepen" data-height="268" data-theme-id="11923" data-slug-hash="XJeKYx" data-default-tab="result" data-user="gnardella">See the Pen <a href="http://codepen.io/gnardella/pen/XJeKYx/">PE_HTML</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js" async=""></script>
+<script src="//assets.codepen.io/assets/embed/ei.js" async></script>
+
  Come vedi, quando di clicca su un collegamento, la pagina si sposta in alto per visualizzare la sezione che ci interessa. A questo punto per tornare al menù, bisogna scorrere con la barra verticale sulla destra. L'aspetto è **minimale** ma comunque viene **garantito l'accesso a tutte le informazioni**.
 
 ### 2. Facciamoci belli
 
 Aggiungiamo adesso qualche regola CSS per cambiare l'**aspetto** del nostro menù.
 
-See the Pen <a href="http://codepen.io/gnardella/pen/YPrNXM/">PE_CSS</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.
-
-<script src="//assets.codepen.io/assets/embed/ei.js" async=""></script>
+<p data-height="300" data-theme-id="11923" data-slug-hash="YPrNXM" data-default-tab="html,result" data-user="gnardella" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/gnardella/pen/YPrNXM/">PE_CSS</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 A questo punto l'aspetto assomiglia effettivamente a quello di un menù a schede. Inoltre è migliorata la navigazione perché non dobbiamo utilizzare la barra di scorrimento per avere di nuovo accesso alle voci del menù.
 
 ### 3. Un po' di movimento
 Infine miglioriamo la nostra **user experience** (okay sto esagerando).
 <p class="codepen" data-height="491" data-theme-id="11923" data-slug-hash="MYEJvr" data-default-tab="result" data-user="gnardella">See the Pen <a href="http://codepen.io/gnardella/pen/MYEJvr/">PE_Javascript</a> by Giuseppe (<a href="http://codepen.io/gnardella">@gnardella</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js" async=""></script>
+<script src="//assets.codepen.io/assets/embed/ei.js" async></script>
 
 Con l'aggiunta di qualche riga di javascript vengono mostrate le schede che ci interessano, inoltre il contenitore delle stesse si adatta al contenuto.
 
