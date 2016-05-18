@@ -13,11 +13,11 @@ Iniziamo facendo chiarezza su due termini che spesso vengono impiegati uno al po
 <dfn>**Internet**</dfn>, spesso definita la *"rete delle reti"*, è un insieme di reti di computer sparse per il mondo e collegate tra loro, al fine di **scambiare informazioni** fra gli utenti che vi accedono.
 Le modalità impiegate per questo scambio sono di vario tipo: email, trasferimento di file, VoIP e il World Wide Web. Gli standard che definiscono come scambiare informazioni sono i **protocolli**
 
-Il <dfn>**World Wide Web**</dfn> (abbreviato semplicemente con Web), è uno dei servizi che utilizzano internet per lo scambio di informazioni. La sua caratteristica principale consiste nella possibilità di usufruire di **contenuti**, collegati tra loro attraverso **collegamenti ipertestuali**, comunemente chiamati <dfn>**link**</dfn>. Il protocollo impiegato è l'<abbr>**HTTP**</abbr> (HyperText Transfer Protocol).
+Il <dfn>**World Wide Web**</dfn> (abbreviato semplicemente con Web), è uno dei servizi che utilizzano internet per lo scambio di informazioni. La sua caratteristica principale consiste nella possibilità di usufruire di **contenuti**, ai quali si accede attraverso **collegamenti ipertestuali**, comunemente chiamati <dfn>**link**</dfn>. Il protocollo impiegato è l'<abbr>**HTTP**</abbr> (HyperText Transfer Protocol).
 
 ## Qualche parola sui Browser  
 
-Per poter accedere al Web vengono impiegati dei software chiamati <dfn>**web browser**</dfn> o più semplicemente **browser**. Alcuni di questi vengono forniti direttamente con il sistema operativo impiegato dal computer: Internet Explorer è il browser per i sistemi operativi Windows e Safari per OS X. Altri invece possono essere installati in un secondo momento, come Chrome, Firefox, Opera e altri meno diffusi.
+Per poter accedere al Web vengono impiegati dei software chiamati <dfn>**web browser**</dfn> o più semplicemente **browser**. Alcuni di questi vengono forniti direttamente con il sistema operativo impiegato dal computer: Internet Explorer è il browser per i sistemi operativi Windows e Safari per OS X. Altri invece possono essere installati in un secondo momento, come Chrome, Firefox, Opera tra i più diffus.
 Di questi esistono poi le versioni per i dispositivi mobili (iPhone, iPad, dispositivi che utilizzano Android e molti altri).
 
 Gli **aggiornamenti** ai browser vengono rilasciati in maniera abbastanza regolare per fornire un supporto maggiore alle nuove caratteristiche HTML e CSS.
@@ -28,8 +28,7 @@ Sta a ognuno testare i vari browser e poi scegliere quello più idoneo alle prop
 ## I Server Web
 
 Ma dove si trovano le informazioni a cui vogliamo accedere con i browser?
-Esistono dei computer costantemente collegati a internet, i **server** , su cui girano delle particolari applicazioni chiamate appunto **server web**. I server hanno il compito di gestire le richieste di pagine web di un **client**, dove invece è installato il browser (un computer personale, un tablet o uno smartphone). La comunicazione tra server e client avviene tramite il protocollo HTTP, o nella versione sicura, tramite HTTPS.
-
+Esistono dei computer costantemente collegati a internet, i **server** , su cui girano delle particolari applicazioni chiamate appunto **server web**. I server hanno il compito di gestire le richieste di pagine web di un **client**, dove invece è installato il browser (un computer personale, un tablet o uno smartphone). La comunicazione tra server e client avviene tramite il protocollo HTTP, o nella versione sicura, tramite HTTPS.  
 Spesso la denominazione server web viene impiegata anche per indicare il computer che ospita le pagine web.
 
 ## Come si accede al Web
