@@ -19,7 +19,8 @@ La graceful degradation parte dalla realizzazione di contenuti web per i browse
 
 ### L'approccio del progressive enhancement
 Il progressive enhancement parte, invece, dalla situazione opposta: prima ci si concentra sul **contenuto**, in modo che sia accessibile a tutti i browser, successivamente si aggiungono le funzionalità relative alla **presentazione** e al **comportamento**.
-##Il Web a strati: contenuto, presentazione e comportamento
+
+## Il Web a strati: contenuto, presentazione e comportamento
 **Separazione, separazione, separazione**: il mantra degli standard web.
 
 Preogettare secondo gli standard, significa dividere il contenuto, dalla presentazione e dal comportamento. Per raggiungere questo obiettivo ricorriamo ai seguenti linguaggi:
@@ -59,7 +60,8 @@ Infine miglioriamo la nostra **user experience** (okay sto esagerando).
 Con l'aggiunta di qualche riga di javascript vengono mostrate le schede che ci interessano, inoltre il contenitore delle stesse si adatta al contenuto.
 
 Come hai potuto notare, utilizzando il progressive enhancement come metodologia per in tuoi progetti, potrai raggiungere ottimi risultati, **garantendo l'accesso ai contenuti** per tutti gli utenti (indifferentemente dalle tecnologie impiegate) **senza sacrificare la qualità**, di cui potrà usufruire chi possiede tecnologia più moderne.
-##I principi del progressive enhancement
+
+## I principi del progressive enhancement
 Per finire, ecco l'elenco dei principi fondamentali del progressive enhancement.
 
 * Il contenuto di base dovrebbe essere accessibile a tutti i browser
