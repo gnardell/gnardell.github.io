@@ -177,3 +177,20 @@ jQuery(document).ready(function ($) {
     $('#input-file-name').text('');
   });
 });
+
+  //============================================================
+  //    Search inizialized
+  //============================================================
+
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+  json: '/search.json'
+})
+
+$('#search-input').on('keyup', function(){
+  if ($('#results-container').has('li').length >= 0) {
+    $('#results-container').css("display", "block");
+  }
+})
