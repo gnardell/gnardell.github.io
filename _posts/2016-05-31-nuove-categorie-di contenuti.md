@@ -25,10 +25,7 @@ Prima dell'introduzione delle specifiche HTML5, eravamo abituati a raggruppare g
 * Mediante i CSS non modifichiamo altezza e larghezza di un elemento inline, ma possiamo impostare di  il padding, i margini e il bordo.
 * Un elemento inline può contenere solo altri elementi inline.
 
-
-
-
-Come puoi notare, le caratteristiche che differenziano gli elementi block da quelli inline, si riferiscono ad aspetti relativi alla presentazione degli elementi stessi: infatti tramite i CSS possiamo impostare la proprietà *display* degli elementi su **block **e** inline **ottenendo gli stessi risultati.
+Come puoi notare, le caratteristiche che differenziano gli elementi block da quelli inline, si riferiscono ad aspetti relativi alla presentazione degli elementi stessi: infatti tramite i CSS possiamo impostare la proprietà `display` degli elementi su **block** e **inline** ottenendo gli stessi risultati.
 
 Poiché gli standard Web stabiliscono la divisione tra contenuto e presentazione, la distinzione in block e inline è stata eliminata dalle specifiche HTML5, definendo [nuove categorie di contenuti](http://www.w3.org/TR/2014/REC-html5-20141028/dom.html#kinds-of-content).
 
