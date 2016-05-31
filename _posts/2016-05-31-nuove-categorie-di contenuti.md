@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Block e Inline addio - Nuove categorie di contenuti"
-categories: test
+categories: html
 ---
 
 
