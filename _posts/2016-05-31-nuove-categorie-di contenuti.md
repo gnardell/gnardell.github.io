@@ -5,9 +5,10 @@ categories: html
 ---
 
 
-Prima dell'introduzione delle specifiche HTML5, eravamo abituati a raggruppare gli elementi in due categorie: **block **e **inline**.
+Prima dell'introduzione delle specifiche HTML5, eravamo abituati a raggruppare gli elementi in due categorie: **block** e **inline**.
 
 ## Block e inline: le differenze
+
 ### Caratteristiche principali degli elementi block level
 
 * Se a questo tipo di elemento non attribuiamo una larghezza mediante la proprietà width, l'elemento block si estenderà per tutta la larghezza dell'elemento contenitore.
