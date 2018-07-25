@@ -16,7 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://giuseppenardella.it/" # the base hostname & protocol for your site
 logo: #site-logo
 
-gems:
+plugins:
   - jekyll-sitemap
 
 exclude: ["_dev",
@@ -35,7 +35,7 @@ owner:
   avatar: bio-photo.png
   email: gnardell1973@gmail.com
   disqus-shortname: #username
-  twitter: gnardell
+  twitter: #usernam
   facebook: #username
   github: gnardell
   stackexchange: #http://stackoverflow.com/users/123456/username
@@ -43,4 +43,4 @@ owner:
   instagram: #username
   flickr: #username
   tumblr: #username
-  ga: UA-21519862-1 #google-analytics
+  ga: #google-analytics
